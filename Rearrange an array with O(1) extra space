@@ -21,7 +21,6 @@ class Solution{
 
 class Solution
 {
- 
     // arr: input array
     // n: size of array
     //Function to rearrange an array so that arr[i] becomes arr[arr[i]]
