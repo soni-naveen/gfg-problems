@@ -1,0 +1,33 @@
+Given an array arr of length N, Geek wants to split it into pairs such that each element should be in exactly one pair and the sum of each pair is Even. Find if such a split is possible or not.
+
+Input: 
+N = 2
+arr[] = {2,4}
+Output:
+1
+Explanation:
+Geek could pair up (2,4). The sum of this pair is 6 which is even
+
+
+//----------------------------- SOLUTION ----------------------------------//
+
+class Solution {
+    public static boolean makeEven(int N, int[] arr) {
+      int even=0;
+      int odd=0;
+      for(int i=0; i<N; i++){
+          if(arr[i]%2==0){
+              even++;
+          }
+          else{ 
+              odd++;
+          }
+      }
+      if(odd%2==0 && even%2==0){
+          return true;
+      }
+      else{
+          return false;
+      }
+    }
+}
